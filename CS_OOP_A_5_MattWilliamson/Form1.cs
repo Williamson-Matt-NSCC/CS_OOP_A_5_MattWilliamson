@@ -16,5 +16,10 @@ namespace CS_OOP_A_5_MattWilliamson
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
