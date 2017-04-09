@@ -16,7 +16,7 @@ namespace CS_OOP_A_5_MattWilliamson
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new GameForm());
         }
     }
 }
