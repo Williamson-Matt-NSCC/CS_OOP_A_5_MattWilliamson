@@ -11,7 +11,7 @@ namespace CS_OOP_A_5_MattWilliamson
     {
         //properties
         private readonly int paddleHeight = 10;
-        private readonly int paddleWidth = 70;
+        private readonly int paddleWidth = 200;
 
         private Rectangle recPaddleCanvas;
         private Rectangle recGamePlayArea;
@@ -44,8 +44,8 @@ namespace CS_OOP_A_5_MattWilliamson
         }
 
         //x y co-ords
-        private int xPaddlePos;
-        private int yPaddlePos;
+        //private int xPaddlePos;
+        //private int yPaddlePos;
 
         //move
         public void Move(Direction direction)

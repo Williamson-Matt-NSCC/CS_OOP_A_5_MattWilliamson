@@ -9,8 +9,8 @@ namespace CS_OOP_A_5_MattWilliamson
 {
     public class Ball
     {
-        private readonly int ballHeight = 5;
-        private readonly int ballWidth = 5;
+        private readonly int ballHeight = 10;
+        private readonly int ballWidth = 10;
 
         private Rectangle recGamePlayArea;
         private Rectangle recBallCanvas;
@@ -23,6 +23,7 @@ namespace CS_OOP_A_5_MattWilliamson
         public int XVelocity { get; set; }
         public int YVelocity { get; set; }
 
+
         public Ball(Rectangle recGamePlayArea)
         {
             this.recGamePlayArea = recGamePlayArea;
@@ -32,15 +33,15 @@ namespace CS_OOP_A_5_MattWilliamson
 
             Random random = new Random();
             
-            //XVelocity = random.Next(-5, 5);
-            //YVelocity = random.Next(-5, 5);
+            XVelocity = random.Next(-4, 4);
+            //YVelocity = random.Next(-4, 4);
 
-            XVelocity = -5;
-            YVelocity = -5;
+            //XVelocity = -5;
+            YVelocity = -4;
 
             //start ball in centre of screen
             recBallCanvas.X = recGamePlayArea.Width / 2;
-            recBallCanvas.Y = recGamePlayArea.Height / 2;
+            recBallCanvas.Y = recGamePlayArea.Height - 150;
 
 
         }
