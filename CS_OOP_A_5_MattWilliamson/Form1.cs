@@ -45,7 +45,7 @@ namespace CS_OOP_A_5_MattWilliamson
             blockHeight = 50;
             blockBumper = 0;
             topBumper = 50;
-            numberOfRowsOfBlocks = 3;
+            numberOfRowsOfBlocks = 1;
             gamelost = false;
             KeyPreview = true;
 
@@ -73,7 +73,9 @@ namespace CS_OOP_A_5_MattWilliamson
                 block.Draw(graphics, Color.Blue);
             }
             if (gamelost)
-                GameOver(false);
+            {
+                GameOver();
+            }
         }
 
         private void GameForm_KeyDown(object sender, KeyEventArgs e)
@@ -150,7 +152,7 @@ namespace CS_OOP_A_5_MattWilliamson
             }
             if (blockArray.Count == 0)
             {
-                GameOver(true);
+                GameOver();
             }
         }
 
@@ -201,7 +203,7 @@ namespace CS_OOP_A_5_MattWilliamson
         }
         
 
-        private void GameOver(bool Won)
+        private void GameOver()
         {
             timer1.Stop();
 
